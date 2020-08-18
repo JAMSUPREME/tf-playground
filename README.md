@@ -67,8 +67,14 @@ terraform init -backend-config=config/backend-dev.conf
 
 # Build something basic
 
-Let's make another bucket, but this time do it with Terraform:
+Let's make another bucket, but this time do it with Terraform.
+
+First, create a file in your `/terraform` directory:
+`touch /terraform/sample_bucket.tf`
+
+And let's fill it in:
 ```
+# /terraform/sample_bucket.tf
 resource "google_storage_bucket" "sample-bucket" {
   name          = "jamsupreme-another-bucket-vcool"
   force_destroy = true
