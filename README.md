@@ -38,7 +38,7 @@ You can use the bash helper to correctly generate your `/terraform` directory:
 
 ```
 # tfgenerator [project-id] [tf-bucket]
-tfgenerator tf-playground-285720 jamsupreme-tf-bucket
+tfgenerator tf-playground-2 jamsupreme-tf-bucket-2
 ```
 
 ## Make service account credentials

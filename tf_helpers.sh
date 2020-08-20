@@ -45,6 +45,7 @@ EOF
   cat << EOF > configuration.tf
 provider "google" {
   project = "$1"
+  credentials = file("credentials.json")
   region  = "us-east4"
   zone    = "us-east4-a"
 }

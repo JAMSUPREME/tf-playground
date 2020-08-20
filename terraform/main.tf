@@ -1,5 +1,4 @@
-# Nothing interesting yet
-# We'll add some stuff here
-
-
-# Side note: Best practice is to organize resources by feature or product
+resource "google_storage_bucket" "sample-bucket" {
+  name          = "jamsupreme-another-bucket-vcool-2"
+  force_destroy = true
+}
